@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start:master": "cd packages/master && yarn start",
+    "start:child": "cd packages/child && yarn start",
+    "build:master": "cd packages/master && yarn build",
+    "build:child": "cd packages/child && yarn build"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
